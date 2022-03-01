@@ -4,15 +4,15 @@ TESSERACT_OCR_VERSION=3.03
 TESSERACT_OCR_DATA_VERSION=3.02
 
 TESSERACT_OCR_TGZ=tesseract-ocr-$TESSERACT_OCR_VERSION.tar.gz
-TESSRACT_OCR_DATA_ENG=tesseract-ocr-$TESSERACT_OCR_DATA_VERSION.eng.tar.gz
-TESSRACT_OCR_DATA_SPA=tesseract-ocr-$TESSERACT_OCR_DATA_VERSION.spa.tar.gz
+TESSRACT_OCR_DATA_ENG=tesseract-ocr-$TESSERACT_OCR_DATA_VERSION.math_cells.tar.gz
+TESSRACT_OCR_DATA_SPA=tesseract-ocr-$TESSERACT_OCR_DATA_VERSION.given_cells.tar.gz
 
 INSTALL_DIR=$BUILD_DIR/vendor/tesseract-ocr/
 INSTALL_DIR_TRAINING_DATA=$BUILD_DIR/vendor/
 TESSERACT_OCR_DIR=${HOME}/vendor/tesseract-ocr
 ENVSCRIPT=$BUILD_DIR/.profile.d/tesseract-ocr.sh
 
-TESSERACT_OCR_LANGUAGES=eng,spa
+TESSERACT_OCR_LANGUAGES=math_cells,given_cells
 
 echo "Unpacking Tesseract-OCR binaries"
 mkdir -p $INSTALL_DIR
