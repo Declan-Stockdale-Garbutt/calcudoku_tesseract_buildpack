@@ -24,7 +24,9 @@ then
    do
      lang="${array[i]}"
      echo $lang 'training data'
-
+     echo $INSTALL_DIR_TRAINING_DATA 'INSTALL_DIR_TRAINING_DATA'
+     echo $tesseract-ocr-$TESSERACT_OCR_DATA_VERSION.$lang.tar.gz 'tesseract-ocr-$TESSERACT_OCR_DATA_VERSION.$lang.tar.gz'
+     
   tar -zxvf tesseract-ocr-$TESSERACT_OCR_DATA_VERSION.$lang.tar.gz -C $INSTALL_DIR_TRAINING_DATA
 
    done
