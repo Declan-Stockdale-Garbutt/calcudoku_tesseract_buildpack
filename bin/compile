@@ -22,8 +22,9 @@ then
    do
      lang="${array[i]}"
      echo $lang 'training data'
+     echo 'INSTALL_DIR = ' $INSTALL_DIR
      unzip $lang.zip -d $INSTALL_DIR
-
+     unzip $lang.zip -d "/app/.apt/usr/share/tesseract-ocr/4.00/tessdata/"
    done
 fi
 
